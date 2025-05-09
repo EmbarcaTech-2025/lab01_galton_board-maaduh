@@ -10,6 +10,31 @@
 #define I2C_SDA 14
 #define I2C_SCL 15
 
+int left_right(){
+    int a = rand();
+    return a % 2;
+}
+
+int desbalanceado(int b){
+    int a = rand();
+    if(b == 0){
+        if (a % 4 == 0){
+            return 1;
+        }
+        else{
+            return 0;
+        }
+    }
+    else{
+        if (a % 4 == 0){
+            return 0;
+        }
+        else{
+            return 1;
+        }
+    }
+}
+
 int main()
 {
     stdio_init_all();
