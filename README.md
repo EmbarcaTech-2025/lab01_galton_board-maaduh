@@ -1,13 +1,13 @@
 
 # Projetos de Sistemas Embarcados - EmbarcaTech 2025
 
-Autor: **Insira Seu Nome**
+Autor: **Maria Eduarda Araujo Pereira**
 
 Curso: Residência Tecnológica em Sistemas Embarcados
 
 Instituição: EmbarcaTech - HBr
 
-Campinas, ___ de 2025
+Brasília 2025
 
 ---
 
