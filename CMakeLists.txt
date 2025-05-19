@@ -43,6 +43,8 @@ add_executable(lab-01-galton-board
 pico_set_program_name(lab-01-galton-board "lab-01-galton-board")
 pico_set_program_version(lab-01-galton-board "0.1")
 
+pico_generate_pio_header(lab-01-galton-board ${CMAKE_CURRENT_LIST_DIR}/ws2818b.pio)
+
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(lab-01-galton-board 0)
 pico_enable_stdio_usb(lab-01-galton-board 1)
@@ -60,7 +62,7 @@ target_include_directories(lab-01-galton-board PRIVATE
 # Add any user requested libraries
 target_link_libraries(lab-01-galton-board 
         hardware_i2c
-        
+        hardware_dma
         )
 
 pico_add_extra_outputs(lab-01-galton-board)
